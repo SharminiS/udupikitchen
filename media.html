@@ -36,6 +36,27 @@
 	<!--[if lt IE 9]>
 		<script src="js/html5/respond.min.js"></script>
     <![endif]-->
+
+	<style>
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-chat a img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-chat a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 	
 </head>
 
@@ -349,6 +370,14 @@
 		</main>
 
 		<button id="scrollToTopBtn">↑</button>
+
+
+		<!-- Whatsapp -->
+        <div class="whatsapp-chat">
+            <a id="whatsapp-btn" href="https://wa.me/1234567890" target="_blank">
+                <img src="assets/images/whatsapp.png" alt="Chat on WhatsApp">
+            </a>
+        </div>
 		
 		<!-- Footer Main -->
 		<footer id="footer-main" class="container-fluid no-left-padding no-right-padding footer-main footer-main-2">

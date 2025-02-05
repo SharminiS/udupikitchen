@@ -161,7 +161,7 @@
 .header_s .ownavigation .navbar-nav li a {
 	color: #a38008;
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 0.3px;
 	text-transform: uppercase;
@@ -221,7 +221,7 @@
 }
 /* - Widget : About */
 .widget_about p {
-	color: #fff;
+	color: #6f6f6f;
 	letter-spacing: 0.9px;
 	line-height: 28px;
 }
@@ -393,7 +393,7 @@
 	padding-right: 20px;
 }
 .footer-main-2 .top-footer .widget_subscribe .btn {
-	background-color: #c59d5f;
+	background-color: #361810;
 	color: #fff;
 	height: 45px;
 	border: none;
@@ -486,7 +486,7 @@
 .newsletter-section .newsletter-form .input-group .btn  { 
 	padding: 0 25px;
 	height: 37px;
-	background-color: #c59d5f;
+	background-color: #361810;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -580,7 +580,7 @@
 	z-index: -1;
 }
 .page-banner h3 {
-	color: #c59d5f;
+	color: #361810;
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
@@ -1210,14 +1210,14 @@
 	margin-top: 61px;
 }
 .testimonial-section .carousel-indicators li {
-	background-color: #8e7346;
+	background-color: #f2f2f2;
 	border: none;
 	margin: 0 9px;
 	width: 12px;
 	height: 12px;
 }
 .testimonial-section .carousel-indicators li.active {
-	background-color: #c59d5f;
+	background-color: #361810;
 }
 /* - Gallery Section */
 .gallery-section {
@@ -2380,7 +2380,7 @@ article.type-post .about-author .author-details p {
 }
 .cnt-detail-box p,
 .cnt-detail-box p a {
-	color: #777777;
+	color: #000;
 }
 .cnt-detail-box p a {
 	text-decoration: none;
@@ -2392,6 +2392,7 @@ article.type-post .about-author .author-details p {
 .contact-form h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
+	color: #361810;
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 35px;
@@ -2399,7 +2400,7 @@ article.type-post .about-author .author-details p {
 	position: relative;
 }
 .contact-form h3::before {
-	background-color: #c59d5f;
+	background-color: #fff;
 	content: "";
 	position: absolute;
 	left: 0;
@@ -2426,7 +2427,7 @@ article.type-post .about-author .author-details p {
 	margin-top: 75px;
 }
 .contact-form .form-control {
-	border: 1px solid #e0e0e0;
+	border: 1px solid #aba3a3;
 	border-radius: 0;
 	-webkit-box-shadow: none;
 	-webkit-appearance: none;
@@ -2458,7 +2459,7 @@ article.type-post .about-author .author-details p {
 	color: #bdbdbd;
 }
 .contact-form button {
-    background-color: #c59d5f;
+    background-color: #361810;
     border: medium none;
     border-radius: 0;
     color: #fff;
@@ -2710,12 +2711,12 @@ article.type-post .about-author .author-details p {
 	}
 	/* - Contact Details */
 	.contact-details [class*="col-md-"]::after {
-		border-left: 2px dashed #c59d5f;
+		/* border-left: 2px dashed #361810; */
 		content: "";
 		position: absolute;
 		left: -1px;
 		bottom: 30px;
-		height: 60px;
+		height: 100px;
 		width: 3px;
 	}
 	.contact-details [class*="col-md-"]:nth-child(3n+1)::after {
@@ -3291,3 +3292,73 @@ article.type-post .about-author .author-details p {
 		margin-right: 5px;
 	}	
 }
+
+
+
+
+.container-fluid.services-section {
+	background-color: #f9f9f9;
+  }
+  
+  .slider-container {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	margin: 20px auto;
+  }
+  
+  .slider-wrapper {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	width: 150%; /* Assuming 15 items, will scroll smoothly */
+  }
+  
+  .slide {
+	min-width: 25%; /* Show 4 items per row */
+	box-sizing: border-box;
+	padding: 10px;
+  }
+  
+  .srv-box {
+	background: #fff;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 8px;
+  }
+  
+  .img-box img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+  }
+  
+  .slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1;
+  }
+  
+  .slider-btn.prev-btn {
+	left: 10px;
+  }
+  
+  .slider-btn.next-btn {
+	right: 10px;
+  }
+  
+
+  
+
+
+
+
+
+
+ 

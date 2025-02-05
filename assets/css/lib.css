@@ -19535,7 +19535,8 @@ screen and (max-height:300px) {
 	font-family: 'Stroke-Gap-Icons';
 	speak: none;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 800;
+	color: #000;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;

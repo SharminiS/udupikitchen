@@ -37,6 +37,28 @@
 		<script src="js/html5/respond.min.js"></script>
     <![endif]-->
 	
+
+	<style>
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-chat a img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-chat a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ownavigation">
@@ -143,10 +165,10 @@
 		<div class="container-header no-left-padding no-right-padding page-banner text-center">
 			<!-- Container -->
 			<div class="container">
-				<h3>ABOUT</h3>
+				<h3>SERVICES</h3>
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li class="active">about</li>
+					<li class="active">Our services</li>
 				</ol>
 			</div><!-- Container /- -->
 		</div><!-- Page Header /- -->
@@ -170,13 +192,13 @@
 							<p>Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Goodbye gray sky hello blue.</p>
 							<div class="chef-detail">
 								<i><img src="assets/images/about-thumb.jpg" alt="About" /></i>
-								<span><img src="assets/images/chef-sign.png" alt="Chef Sign" /></span>
+								<!-- <span><img src="assets/images/chef-sign.png" alt="Chef Sign" /></span> -->
 								<div class="cnt">
 									<h4>JACKLIN ROCKY</h4>
 									<ul>
 										<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+									    <li><a href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -365,6 +387,13 @@
 		</main>
 
 		<button id="scrollToTopBtn">↑</button>
+
+		<!-- Whatsapp -->
+        <div class="whatsapp-chat">
+            <a id="whatsapp-btn" href="https://wa.me/1234567890" target="_blank">
+                <img src="assets/images/whatsapp.png" alt="Chat on WhatsApp">
+            </a>
+        </div>
 		
 		<!-- Footer Main -->
 		<footer id="footer-main" class="container-fluid no-left-padding no-right-padding no-top-margin footer-main footer-main-2">
