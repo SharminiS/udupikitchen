@@ -510,7 +510,7 @@
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	display: inline-block;
-	content: "";
+	/* content: ""; */
 	bottom: 0px;
 	left: 0;
 	right: 0;
@@ -934,11 +934,11 @@
 }
 .menu-item h3 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 	width: 53%;
 	float: left;
-	color: #c59d5f;
+	color: #361810;
 	margin-left: 15px;
 	margin-bottom: 0;
 	margin-top: 17px;
@@ -956,7 +956,7 @@
 	display: block;
 }
 .menu-item > span {
-	color: #c59d5f;
+	color: #361810;
 	float: right;
 	width: 28%;
 	font-size: 25px;
@@ -973,7 +973,7 @@
 }
 .menu-item > span::before {
 	border-top: 1px dashed #222222;
-	content: "";
+	/* content: ""; */
 	display: inline-block;
 	height: 1px;
 	width: 58%;
@@ -1184,9 +1184,9 @@
 }
 .testimonial-section .item > p {
 	color: #a9a9a9;
-	font-size: 13px;
+	font-size: 20px;
 	line-height: 26px;
-	letter-spacing: 0.52px;
+	letter-spacing: 0.7px;
 }
 .testimonial-section .item > i {
 	display: block;
