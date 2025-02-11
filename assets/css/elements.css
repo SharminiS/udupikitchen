@@ -175,7 +175,7 @@
 .header_s .ownavigation .navbar-nav li:hover > a,
 .header_s .ownavigation .navbar-nav li a:hover,
 .header_s .ownavigation .navbar-nav li .dropdown-menu > li > a:hover {
-	color: #361810;
+	color: #a38008;
 }
 /* - Header2 */
 .header_s.header_s2 .ownavigation {
@@ -419,7 +419,7 @@
 }
 /* - Newsletter Section */
 .newsletter-section {
-	background-image: url("../images/newsletter-bg.jpg");
+	background-image: url("../images/banner\ fruits.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -518,7 +518,7 @@
 	height: 24px;
 }
 .section-header h3 {
-	color: #361810;
+	color: #a38008;
 	display: inline-block;
 	font-family: 'Great Vibes', cursive;
 	font-size: 65px;
@@ -713,7 +713,7 @@
 }
 /* - Surprise Section */
 .surprise-section {
-	background-image: url("../images/surprise-sec-bg.jpg");
+	background-image: url("../images/surprise.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
@@ -848,7 +848,7 @@
 }
 /* - Counter Section */
 .counter-section {
-	background-image: url("../images/counter-bg.jpg");
+	background-image: url("../images/counters.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 120px;
@@ -1160,7 +1160,7 @@
 }
 /* - Testimonial Section */
 .testimonial-section {
-	background-image: url("../images/testimonial-bg.jpg");
+	background-image: url("../images/testimonial.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -1170,7 +1170,7 @@
 	margin-bottom: 75px;
 }
 .testimonial-section::before {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.7);
 	bottom: 0;
 	content: "";
 	display: inline-block;
