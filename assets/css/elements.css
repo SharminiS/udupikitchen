@@ -430,7 +430,7 @@
 	width:100%!important;
 }
 .newsletter-section::before {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.5);
 	bottom: 0;
 	content: "";
 	display: inline-block;
@@ -555,11 +555,11 @@
 	left: 0;
 }
 .section-header2 h3 {
-	color: #361810;
+	color: #a38008;
 }
 /* + Page Banner */
 .page-banner {
-	background-image: url("../images/page-banner.jpg");
+	background-image: url("../images/1b.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -986,7 +986,7 @@
 }
 /* - Book Table Section */
 .book-table-section {
-	background-image: url("../images/book-table-bg.jpg");
+	background-image: url("../images/banner8.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -1362,7 +1362,8 @@
 	width: 100%;
 }
 .team-box::before {
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0);
+	background-image: url();
 	border: 3px solid #eacc9e;
 	bottom: 0;
 	content: "";
@@ -1829,7 +1830,7 @@
 	position: relative;
 }
 .widget_offer .offer-box::before {
-	background-color: rgba(34,34,34,0.8);
+	background-color: rgba(34,34,34,0.5);
 	content: "";
 	display: inline-block;
 	position: absolute;
