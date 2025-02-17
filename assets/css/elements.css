@@ -559,7 +559,7 @@
 }
 /* + Page Banner */
 .page-banner {
-	background-image: url("../images/1b.jpeg");
+	background-image: url("../images/1a.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -569,7 +569,7 @@
 	z-index: 1;
 }
 .page-banner::before {
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.4);
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -580,7 +580,7 @@
 	z-index: -1;
 }
 .page-banner h3 {
-	color: #361810;
+	color: #a38008;
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
@@ -615,7 +615,7 @@
 	text-decoration: none;
 }
 .page-banner ol.breadcrumb li.active  {
-	color: #361810;
+	color: #a38008;
 }
 .page-banner .breadcrumb > li + li::before {
 	color: #fff;
@@ -1364,7 +1364,7 @@
 .team-box::before {
 	background-color: rgba(0,0,0,0);
 	background-image: url();
-	border: 3px solid #eacc9e;
+	border: 3px solid #fff;
 	bottom: 0;
 	content: "";
 	display: inline-block;
@@ -2367,7 +2367,7 @@ article.type-post .about-author .author-details p {
 }
 .cnt-detail-box h4 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 0.28px;
 	text-transform: uppercase;
@@ -2387,7 +2387,7 @@ article.type-post .about-author .author-details p {
 	text-decoration: none;
 }
 .cnt-detail-box p a:hover {
-	color: #c59d5f;
+	color: #a38008;
 }
 /* - Contact Form */
 .contact-form h3 {
@@ -3359,7 +3359,61 @@ article.type-post .about-author .author-details p {
 
 
 
+  .image-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	max-width: 900px;
+	padding: 10px;
+}
+
+.image-container img {
+	width: 30%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.image-container img {
+		width: 100%;
+	}
+}
 
 
+
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	max-width: 1200px;
+	padding: 10px;
+}
+
+.image-container img {
+	width: 22%; /* Adjusted to fit 4 images in a row with spacing */
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+	.image-container img {
+		width: 45%; /* Two images per row on tablets */
+	}
+}
+
+@media (max-width: 600px) {
+	.image-container img {
+		width: 100%; /* One image per row on mobile */
+	}
+}
 
  

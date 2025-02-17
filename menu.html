@@ -56,6 +56,79 @@
         .whatsapp-chat a img:hover {
             transform: scale(1.1);
         }
+		.btn {
+            background-color: #361810; /* Default background */
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #a38008; /* Changes color on hover */
+            
+		transform: scale(1.1); /* Slightly increases size */
+        }
+		.parent {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Adjust based on parent height */
+}
+
+
+.food {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Food Item */
+        .food-item {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Styling */
+        .food-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Name & Price */
+        .food-item h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .food-item p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+		h1 {
+			text-align: center;
+			font-size: 50px;
+			font-family: 'Great Vibes', cursive;
+			color: #a38008;
+		}
+
+
     </style>
 	
 </head>
@@ -145,8 +218,21 @@
 			</div><!-- Container /- -->
 		</div><!-- Page Header /- -->
 		<div class="clearfix"></div>
+
+		<div class="container">
+			<h1>View Our Full Menu</h1>
+			<p style="text-align: center;font-size: 20px;">
+				At Udupi Kitchen, we serve authentic South Indian flavors with a touch of tradition. While our menu varies across outlets, our signature dishes remain at the heart of our culinary experience, ensuring you enjoy the true taste of Udupi wherever you dine.	</p>
+				
+				<div class="parent">
+					<a href="assets/Udupi Menu.pdf" target="_blank">
+					  <button class="btn">Download Menu</button>
+					</a>
+				  </div>
+				  
+			</div>
 		
-		<main class="site-main">
+		<main class="site-main" style="padding-top:50px;">
 
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
@@ -164,7 +250,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/idli.png" alt="Menu" /></i>
 								</div>
 								<h3>IDLI - 1</h3>
 								<span>₹15</span>
@@ -174,7 +260,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/rava dosa.png" alt="Menu" /></i>
 								</div>
 								<h3>RAVA IDLY - 1</h3>
 								<span>₹40</span>
@@ -214,7 +300,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/pongal-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PONGAL </h3>
 								<span>₹50</span>
@@ -224,7 +310,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/shavige-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>SHAVIGE BATH </h3>
 								<span>₹50</span>
@@ -234,7 +320,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/poori.png" alt="Menu" /></i>
 								</div>
 								<h3>POORI </h3>
 								<span>₹60</span>
@@ -244,7 +330,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/kesari-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>KESARI BATH</h3>
 								<span>₹30</span>
@@ -254,7 +340,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/karabath-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>KHARA BATH </h3>
 								<span>₹30</span>
@@ -264,7 +350,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/chow chow-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>CHOW CHOW BATH </h3>
 								<span>₹60</span>
@@ -274,7 +360,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/bajji bonda-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>ВАЈJI/РАKODA  </h3>
 								<span>₹40</span>
@@ -284,7 +370,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/bounda soup-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>BONDA SOUP </h3>
 								<span>₹45</span>
@@ -294,7 +380,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/masuru vade-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MOSRU VADA  </h3>
 								<span>₹40</span>
@@ -304,7 +390,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/avalakki-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>AVALAKKI</h3>
 								<span>₹50</span>
@@ -314,7 +400,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/uppitu avalakki-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>UPPIT AVALAKKI </h3>
 								<span>₹60</span>
@@ -324,7 +410,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/mangalore bun-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MANGALORE BUNS -2 </h3>
 								<span>₹50</span>
@@ -334,7 +420,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/mangalore bun-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MANGALORE BUNS-1</h3>
 								<span>₹25</span>
@@ -344,7 +430,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/maddur vade-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MADDUR VADA- 2</h3>
 								<span>₹30</span>
@@ -354,7 +440,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/rave vade-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>RAVA VADE / BAJJI-2</h3>
 								<span>₹15</span>
@@ -364,7 +450,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/bajji bonda-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>RAVA VADE / BAJJI-2</h3>
 								<span>₹15</span>
@@ -392,7 +478,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/1-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MASALA DOSA </h3>
 								<span>₹60</span>
@@ -402,7 +488,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/2-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PAPER PLAIN DOSA  </h3>
 								<span>₹70</span>
@@ -412,7 +498,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/3-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>ONION DOSA </h3>
 								<span>₹70</span>
@@ -422,7 +508,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/4-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PLAIN DOSA </h3>
 								<span>₹50</span>
@@ -432,7 +518,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/5-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>SET DOSA </h3>
 								<span>₹60</span>
@@ -442,7 +528,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/6-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>OPEN DOSA </h3>
 								<span>₹70</span>
@@ -452,7 +538,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/7-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PAPER MASAL DOSA </h3>
 								<span>₹80</span>
@@ -462,7 +548,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/8-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>BTR PLAIN DOSA </h3>
 								<span>₹60</span>
@@ -472,7 +558,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/9-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>BTR MASALA DOSA </h3>
 								<span>₹70</span>
@@ -482,7 +568,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/10-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>CHEESE PLAIN DOSA </h3>
 								<span>₹75</span>
@@ -492,7 +578,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/11-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>RAVA MASALA DOSA </h3>
 								<span>₹80</span>
@@ -502,7 +588,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/12-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>RAVA ONION DOSA </h3>
 								<span>₹80</span>
@@ -512,7 +598,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/13-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>CHEESE MASALA DOSA </h3>
 								<span>₹80</span>
@@ -522,7 +608,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/14-80.jpg"alt="Menu" /></i>
 								</div>
 								<h3>VEGETABLE DOSA </h3>
 								<span>₹70</span>
@@ -532,7 +618,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/15-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>OPEN CHEESE DOSA </h3>
 								<span>₹70</span>
@@ -542,7 +628,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/16-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>KALI DOSA </h3>
 								<span>₹50</span>
@@ -552,7 +638,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/17-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MYSORE MASALA DOSA </h3>
 								<span>₹70</span>
@@ -562,7 +648,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/18-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PANEER MASALA DOSA </h3>
 								<span>₹80</span>
@@ -572,27 +658,19 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/19-80.jpg"  alt="Menu" /></i>
 								</div>
 								<h3>GHEE PLAIN DOSA </h3>
 								<span>₹70</span>
 							</div>
 						</div><!-- Menu Item /- -->
 						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DAY SPL DOSA </h3>
-								<span>₹75</span>
-							</div>
-						</div><!-- Menu Item /- -->
+					
 						<!-- Menu Item -->
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/20-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>NEER DOSA </h3>
 								<span>₹60</span>
@@ -602,7 +680,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/21-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>RAGI DOSA </h3>
 								<span>₹60</span>
@@ -612,7 +690,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/22-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>PALAK DOSA </h3>
 								<span>₹60</span>
@@ -622,7 +700,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/23-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>AKKI ROTTI  </h3>
 								<span>₹70</span>
@@ -650,7 +728,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/Artboard 1.jpg" alt="Menu" /></i>
 								</div>
 								<h3>SOUTH INDIAN MEALS</h3>
 								<span>₹80</span>
@@ -660,7 +738,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/Artboard 2.jpg " alt="Menu" /></i>
 								</div>
 								<h3>NORTH INDIAN MEALS   </h3>
 								<span>₹120</span>
@@ -670,7 +748,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/mini meals-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>MINI MEALS </h3>
 								<span>₹50</span>
@@ -680,7 +758,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/cup-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>CUP CURD </h3>
 								<span>₹10</span>
@@ -690,7 +768,7 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/roti-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>ROTI CURRY </h3>
 								<span>₹80</span>
@@ -700,32 +778,14 @@
 						<div class="col-md-6">
 							<div class="menu-item">
 								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
+									<i><img src="assets/images/1x/extra rice-80.jpg" alt="Menu" /></i>
 								</div>
 								<h3>EXTRA RICE </h3>
 								<span>₹30</span>
 							</div>
 						</div><!-- Menu Item /- -->
 						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>NORTH COMBO </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHINEESE COMBO </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -744,276 +804,62 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI MANCHURIAN </h3>
-								<span>₹80</span>
+
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/gobi manchu.jpg" alt="Dish 1">
+								<h3>GOBI MANCHURIAN</h3>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI M. GRAVY </h3>
-								<span>₹90</span>
+					
+							<div class="food-item">
+								<img src="assets/images/gobi pepper fry-01.jpg" alt="Dish 2">
+								<h3>GOBI PEPPER DRY</h3>
+								<p>₹100</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI CHILLI </h3>
-								<span>₹90</span>
+					
+							<div class="food-item">
+								<img src="assets/images/gobi 65-01.jpg" alt="Dish 3">
+								<h3>GOBI 65</h3>
+								<p>₹100</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI PEPPER DRY </h3>
-								<span>₹100</span>
+							<div class="food-item">
+								<img src="assets/images/21.jpg" alt="Dish 3">
+								<h3>BABYCORN MANCHURIAN</h3>
+								<p>₹90</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI 65 </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN MANCHURIAN </h3>
-								<span>₹90</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN M. GRAVY </h3>
-								<span>₹105</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN CHILLI </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN PEPPER DRY </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN 65 </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/20.jpg" alt="Dish 3">
 								<h3>MUSHROOM MANCHURIAN</h3>
-								<span>₹110</span>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM M. GRAVY </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM CHILLI  </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/19.jpg" alt="Dish 3">
 								<h3>MUSHROOM PEPPER DRY</h3>
-								<span>₹125</span>
+								<p>₹125</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM 65 </h3>
-								<span>₹120</span>
+							<div class="food-item">
+								<img src="assets/images/1x/panner-80.jpg" alt="Dish 3">
+								<h3>PANEER MANCHURIAN</h3>
+								<p>₹140</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER MANCHURIAN </h3>
-								<span>₹140</span>
+							<div class="food-item">
+								<img src="assets/images/17.jpg" alt="Dish 3">
+								<h3>PANEER PEPPER DRY</h3>
+								<p>₹160</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER M. GRAVY </h3>
-								<span>₹150</span>
+							<div class="food-item">
+								<img src="assets/images/1x/aloo tikki-80.jpg" alt="Dish 3">
+								<h3>ALU KABAB</h3>
+								<p>₹130</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER CHILLI  </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER PEPPER DRY  </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER 65 </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER TIKKA </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>IDLI MANCHURIAN </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>IDLY CHILLI </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>IDLY 65  </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANNIR KABAB  </h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM KABAB </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU KABAB  </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
+
+
+
+						
+						 
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -1033,364 +879,47 @@
 					<!-- Row -->
 					<div class="row">
 						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG NOODLES  </h3>
-								<span>₹90</span>
+	
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/veg noodles.jpg" alt="Dish 1">
+								<h3>VEG NOODLES</h3>
+								<p>₹90</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER NOODLES </h3>
-								<span>₹120</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/mushroom noodles-80.jpg" alt="Dish 2">
+								<h3>MUSHROOM NOODLES</h3>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM NOODLES  </h3>
-								<span>₹110</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/paneer noodles-80.jpg" alt="Dish 3">
+								<h3>PANEER NOODLES</h3>
+								<p>₹120</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN NOODLES </h3>
-								<span>₹110</span>
+							<div class="food-item">
+								<img src="assets/images/1x/schwen noodles-80.jpg" alt="Dish 3">
+								<h3>SCHEZWAN NOODLES</h3>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER NOODLES </h3>
-								<span>₹100</span>
+							<div class="food-item">
+								<img src="assets/images/1x/gobi noodles-80.jpg" alt="Dish 3">
+								<h3>GOBI NOODLES</h3>
+								<p>₹100</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GARLIC NOODLES </h3>
-								<span>₹100</span>
+							<div class="food-item">
+								<img src="assets/images/1x/baby noodles-80.jpg" alt="Dish 3">
+								<h3>BABYCORN NOODLES</h3>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SCHEZWAN NOODLES </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SINGAPORE NOODLES </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>RICE NOODLES </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI NOODLES </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
+					
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
-			
-			<div class="clearfix"></div>
 
-			<!-- Menu Section -->
-			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/ch rice.jpeg" alt="Menu Card" /></span>
-				<!-- <span class="bottom-img"><img src="assets/images/ch rice.jpeg" alt="Menu Card" /></span> -->
-				<!-- Container -->
-				<div class="container">
-					<!-- Section Header -->
-					<div class="section-header text-center">
-						<h3>Chinese Rice </h3>
-					</div><!-- Section Header /- -->
-					<!-- Row -->
-					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG FRIED RICE  </h3>
-								<span>₹90</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER FRIED RICE </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN FRIED RICE </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM FRIED RICE </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER FRIED RICE </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GARLIC FRIED RICE </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SCHEZWAN FRIED RICE </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SINGAPORE FRIED RICE </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>TRIPLE FRIED RICE </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI FRIED RICE </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>JEERA RICE </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GHEE RICE </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-					</div><!-- Row /- -->
-				</div><!-- Container /- -->
-			</div><!-- Menu Section -->
-			
-			<div class="clearfix"></div>
-
-			<!-- Menu Section -->
-			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/north indian rice.jpeg" alt="Menu Card" /></span>
-				<!-- <span class="bottom-img"><img src="assets/images/north indian rice.jpeg" alt="Menu Card" /></span> -->
-				<!-- Container -->
-				<div class="container">
-					<!-- Section Header -->
-					<div class="section-header text-center">
-						<h3>North Indian Rice</h3>
-					</div><!-- Section Header /- -->
-					<!-- Row -->
-					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG PULAV </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG BIRYANI </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>HYDERABAD BIRYANI </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUGHALAI BIRYANI</h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>HANDI BIRYANI </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PEAS PULAV </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER BIRYANI</h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM BIRYANI</h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DAL KICHADI</h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PALAK KICHADI </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-					</div><!-- Row /- -->
-				</div><!-- Container /- -->
-			</div><!-- Menu Section -->
 
 			<div class="clearfix"></div>
 
@@ -1406,566 +935,56 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DAL FRY</h3>
-								<span>₹110</span>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/dal tadka-80.jpg" alt="Dish 1">
+								<h3>DAL THADKA</h3>
+								<p>₹120</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DAL THADKA </h3>
-								<span>₹120</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/kolhaouri dal-80.jpg" alt="Dish 2">
+								<h3>DAL KOLHAPURI</h3>
+								<p>₹130</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DHAL MAKKANWALA </h3>
-								<span>₹130</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/veg kadai-80.jpg" alt="Dish 3">
+								<h3>VEG KADAI</h3>
+								<p>₹160</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DHAL PUNJABI </h3>
-								<span>₹130</span>
+							<div class="food-item">
+								<img src="assets/images/1x/veg hydrabadi-80.jpg" alt="Dish 3">
+								<h3>VEG HYDRABADI</h3>
+								<p>₹160</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DAL KOLHAPURI </h3>
-								<span>₹130</span>
+							<div class="food-item">
+								<img src="assets/images/1x/veg kolhapuri-80.jpg" alt="Dish 3">
+								<h3>VEG KOLHAPURI</h3>
+								<p>₹160</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GREEN PEACE MASALA </h3>
-								<span>₹130</span>
+							<div class="food-item">
+								<img src="assets/images/1x/paneer butter masal-80.jpg" alt="Dish 3">
+								<h3>PANEER BUTTER MASALA</h3>
+								<p>₹160</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI MUTTER </h3>
-								<span>₹120</span>
+							<div class="food-item">
+								<img src="assets/images/1x/mushroom kadai-80.jpg" alt="Dish 3">
+								<h3>MUSHROOM KADAI</h3>
+								<p>₹170</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GOBI MASALA </h3>
-								<span>₹120</span>
+							<div class="food-item">
+								<img src="assets/images/1x/kaju masala-80.jpg" alt="Dish 3">
+								<h3>KAJU MASALA</h3>
+								<p>₹200</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU GOBI MASALA </h3>
-								<span>₹140</span>
+							<div class="food-item">
+								<img src="assets/images/1x/mix veg-80.jpg" alt="Dish 3">
+								<h3>MIX VEG CURRY</h3>
+								<p>₹150</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU GOBI DRY</h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU JEERA DRY</h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MALAI METHI MUTTER </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN GREEN MASALA </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PLAIN PALAK </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHANNA MASALA </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG KADAI </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG KOLHAPURI </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG HYDRABADI </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG MAKKANWALA</h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG KURMA </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG MALAI KUFTA </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG KUFTA</h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MIX VEG CURRY </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG CHILLI MILLI </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG CHILLI MASALA </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG CAPSICUM MASALA </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG DO PYAZA </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BABYCORN MASALA</h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG PEPPER MASALA </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>KAJU MASALA </h3>
-								<span>₹200</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>>KAJU PANNER </h3>
-								<span>₹190</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>KAJU KOLHAPURI </h3>
-								<span>₹190</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM KADAI </h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM MASALA </h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM MUTTER</h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHRUM CHILLI MASALA</h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER TIKKA MASALA</h3>
-								<span>₹190</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER KADAI </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER BUTTER MASALA </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER HYDRABADI </h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER KOLHAPURI</h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER MUTTER MASALA</h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER KUFTA</h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER PASAND </h3>
-								<span>₹160</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SHAHI PANEER</h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER GUCCI </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER CHATPAT </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER CHILLI MASALA </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PALAK PANNER</h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SHOLE PANEER </h3>
-								<span>₹180</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MALAI KUFTA </h3>
-								<span>₹150</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG JAL FREZI </h3>
-								<span>₹170</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU MUTTER </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM SUKKA </h3>
-								<span>₹200</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>UDUPI SPECIAL CURRY/h3>
-								<span>₹200</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>TAWA PULAV </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -1985,145 +1004,57 @@
 					<!-- Row -->
 					<div class="row">
 						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/roti1-80.jpg" alt="Dish 1">
 								<h3>ROTI</h3>
-								<span>₹25</span>
+								<p>₹25</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BUTTER ROTI </h3>
-								<span>₹30</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/butter roti-80.jpg" alt="Dish 2">
+								<h3>BUTTER ROTI</h3>
+								<p>₹30</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>KULCHA </h3>
-								<span>₹30</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/kulcha-80.jpg" alt="Dish 3">
+								<h3>KULCHA</h3>
+								<p>₹30</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/butter kulcha-80.jpg" alt="Dish 3">
 								<h3>BUTTER KULCHA</h3>
-								<span>₹35</span>
+								<p>₹35</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>NAAN </h3>
-								<span>₹35</span>
+							<div class="food-item">
+								<img src="assets/images/1x/naan-80.jpg" alt="Dish 3">
+								<h3>NAAN</h3>
+								<p>₹35</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/butter naan-80.jpg" alt="Dish 3">
 								<h3>BUTTER NAAN</h3>
-								<span>₹40</span>
+								<p>₹40</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>TANDOORI PARATA </h3>
-								<span>₹40</span>
+							<div class="food-item">
+								<img src="assets/images/1x/aloo paratha-80.jpg" alt="Dish 3">
+								<h3>ALU PAROTA</h3>
+								<p>₹60</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU PAROTA </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>STUFF PAROTA </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>STUFF KULCHA </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/channa batora-80.jpg" alt="Dish 3">
 								<h3>CHANNA BATORA</h3>
-								<span>₹100</span>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>METHI ROTI </h3>
-								<span>₹35</span>
+							<div class="food-item">
+								<img src="assets/images/1x/stuff kulcha-80.jpg" alt="Dish 3">
+								<h3>STUFF KULCHA</h3>
+								<p>₹60</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PUDEENA ROTI </h3>
-								<span>₹35</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>EXTRA BATURA </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
+						
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -2132,7 +1063,7 @@
 
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card4.png" alt="Menu Card" /></span>
+				<span class="top-img"><img src="assets/images/16.jpg" alt="Menu Card" /></span>
 				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
 				<!-- Container -->
 				<div class="container">
@@ -2142,341 +1073,68 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MASALA PURI</h3>
-								<span>₹40</span>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/masala puri-80.jpg" alt="Dish 1">
+								<h3>Masala Puri</h3>
+								<p>₹40</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/pani puri-80.jpg" alt="Dish 2">
 								<h3>PANI PURI</h3>
-								<span>₹40</span>
+								<p>₹40</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BHEL PURI </h3>
-								<span>₹50</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/bhel puri-80.jpg" alt="Dish 3">
+								<h3>BHEL PURI</h3>
+								<p>₹50</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SEVE PURI</h3>
-								<span>₹50</span>
+							<div class="food-item">
+								<img src="assets/images/1x/sev puri-80.jpg" alt="Dish 3">
+								<h3>SEV PURI</h3>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SPECIAL BHEL </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/dahi puri-80.jpg" alt="Dish 3">
 								<h3>DHAI PURI</h3>
-								<span>₹60</span>
+								<p>₹60</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ALU PURI </h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PAPAD CHATS</h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/pav-80.jpg" alt="Dish 3">
 								<h3>PAV BHAJJI</h3>
-								<span>₹70</span>
+								<p>₹70</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>EXTRA PAV </h3>
-								<span>₹25</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHEESE PAV BHAJJI </h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/paneer pav-80.jpg" alt="Dish 3">
 								<h3>PANEER PAV BHAJJI</h3>
-								<span>₹80</span>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/mushroom pav-80.jpg" alt="Dish 3">
 								<h3>MUSHROOM PAV BHAJJI</h3>
-								<span>₹80</span>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANNER/MUSHROOM PAV BHAJJI</h3>
-								<span>₹90</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/masala papad-80.jpg" alt="Dish 3">
 								<h3>MASALA PAPAD</h3>
-								<span>₹30</span>
+								<p>₹30</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ROASTED PAPAD</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
+
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
-
-			<div class="clearfix"></div>
-
-			<!-- Menu Section -->
-			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/grilled sandwich.jpeg" alt="Menu Card" /></span>
-				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
-				<!-- Container -->
-				<div class="container">
-					<!-- Section Header -->
-					<div class="section-header text-center">
-						<h3>Grilled Sandwiches</h3>
-					</div><!-- Section Header /- -->
-					<!-- Row -->
-					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG SANDWICH </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PANEER SANDWICH</h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CORN SANDWICH </h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSHROOM SANDWICH </h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VEG CHEESE SANDWICH </h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-					</div><!-- Row /- -->
-				</div><!-- Container /- -->
-			</div><!-- Menu Section -->
-
-			<div class="clearfix"></div>
 			
-			<!-- Menu Section -->
-			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span>
-				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
-				<!-- Container -->
-				<div class="container">
-					<!-- Section Header -->
-					<div class="section-header text-center">
-						<h3>Beverages & Refreshments</h3>
-					</div><!-- Section Header /- -->
-					<!-- Row -->
-					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MINI TEA</h3>
-								<span>₹10</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MINI COFFEE</h3>
-								<span>₹10</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/COVFE.png" alt="Menu" /></i>
-								</div>
-								<h3>TEA</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>COFFEE</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BADAM MILK</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER TEA</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER COFFEE</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>LEMON TEA</h3>
-								<span>₹15</span>
-							</div>
-						</div><!-- Menu Item /- -->
-					</div><!-- Row /- -->
-				</div><!-- Container /- -->
-			</div><!-- Menu Section -->
+		
 			
 			<div class="clearfix"></div>
 
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span>
+				<span class="top-img"><img src="assets/images/13.jpg" alt="Menu Card" /></span>
 				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
 				<!-- Container -->
 				<div class="container">
@@ -2486,186 +1144,57 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PINEAPPLE JUICE</h3>
-								<span>₹45</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/masumbi-80.jpg" alt="Dish 1">
 								<h3>MOOSAMBI JUICE</h3>
-								<span>₹45</span>
+								<p>₹45</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/orange-80.jpg" alt="Dish 2">
 								<h3>ORANGE JUICE</h3>
-								<span>₹45</span>
+								<p>₹45</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/grapes-80.jpg" alt="Dish 3">
 								<h3>GRAPE JUICE</h3>
-								<span>₹45</span>
+								<p>₹45</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MUSK MELON</h3>
-								<span>₹45</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/water-80.jpg" alt="Dish 3">
 								<h3>WATER MELON</h3>
-								<span>₹45</span>
+								<p>₹45</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>SOLID JUICE</h3>
-								<span>₹90</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MOOSAMBI SOLID</h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/promograte-80.jpg" alt="Dish 3">
 								<h3>POMEGRANATE JUICE</h3>
-								<span>₹50</span>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>LIME JUICE</h3>
-								<span>₹35</span>
+							<div class="food-item">
+								<img src="assets/images/1x/pineapple-80.jpg" alt="Dish 3">
+								<h3>PINEAPPLE JUICE</h3>
+								<p>₹45</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MINT LIME</h3>
-								<span>₹40</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER LIME</h3>
-								<span>₹40</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GRAPE LIME</h3>
-								<span>₹45</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>FRESH LIME SODA</h3>
-								<span>₹45</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GINGER LIME SODA</h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BLUE LIME SODA</h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/masala soda-80.jpg" alt="Dish 3">
 								<h3>MASALA SODA</h3>
-								<span>₹50</span>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/ginger soda-80.jpg" alt="Dish 3">
 								<h3>GINGER SODA</h3>
-								<span>₹50</span>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
+							<div class="food-item">
+								<img src="assets/images/1x/lime soda-80.jpg" alt="Dish 3">
+								<h3>FRESH LIME SODA</h3>
+								<p>₹45</p>
+							</div>
+						</div>
+						
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -2674,7 +1203,7 @@
 			
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span>
+				<span class="top-img"><img src="assets/images/1x/mojito-80.jpg" alt="Menu Card" /></span>
 				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
 				<!-- Container -->
 				<div class="container">
@@ -2684,176 +1213,58 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/blue mojito-80.jpg" alt="Dish 1">
 								<h3>BLUE LIME MOJITO</h3>
-								<span>₹80</span>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/mint mojito-80.jpg" alt="Dish 2">
 								<h3>MINT LIME MOJITO</h3>
-								<span>₹80</span>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/stwa mojito-80.jpg" alt="Dish 3">
 								<h3>STRAWBERRY MOJITO</h3>
-								<span>₹80</span>
+								<p>₹80</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/blue-80.jpg" alt="Dish 3">
 								<h3>BLUEBERRY MOJITO</h3>
-								<span>₹80</span>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GUAVA MOJITO</h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>LITCHI MOJITO</h3>
-								<span>₹85</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>KIWI MOJITO</h3>
-								<span>₹85</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ORANGE MOJITO</h3>
-								<span>₹85</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GREEN APPLE MOJITO</h3>
-								<span>₹85</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>FRUIT LASSI</h3>
-								<span>₹75</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/df lassi-80.jpg" alt="Dish 3">
 								<h3>DRY FRUIT LASSI</h3>
-								<span>₹85</span>
+								<p>₹85</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BANANA LASSI</h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/sweet lassi1-80.jpg" alt="Dish 3">
 								<h3>SWEET LASSI</h3>
-								<span>₹50</span>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MANGO LASSI</h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ROSE LASSI</h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>STRAWBERRY LASSI</h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/butter milk-80.jpg" alt="Dish 3">
 								<h3>BUTTER MILK</h3>
-								<span>₹40</span>
+								<p>₹40</p>
 							</div>
-						</div><!-- Menu Item /- -->
+							<div class="food-item">
+								<img src="assets/images/1x/mango-80.jpg" alt="Dish 3">
+								<h3>MANGO LASSI</h3>
+								<p>₹60</p>
+							</div>
+							<div class="food-item">
+								<img src="assets/images/1x/sweet lassi-80.jpg" alt="Dish 3">
+								<h3>STRAWBERRY LASSI</h3>
+								<p>₹60</p>
+							</div>
+						</div>
+						
+						
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -2862,7 +1273,7 @@
 
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span>
+				<span class="top-img"><img src="assets/images/12.jpg" alt="Menu Card" /></span>
 				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
 				<!-- Container -->
 				<div class="container">
@@ -2872,206 +1283,58 @@
 					</div><!-- Section Header /- -->
 					<!-- Row -->
 					<div class="row">
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BANANA MILKSHAKE </h3>
-								<span>₹60</span>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/df ms-80.jpg" alt="Dish 1">
+								<h3>DRY FRUIT MILKSHAKE</h3>
+								<p>₹85</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PAPAYA MILKSHAKE </h3>
-								<span>₹60</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/banana ms-80.jpg" alt="Dish 2">
+								<h3>BANANA MILKSHAKE</h3>
+								<p>₹60</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHIKKU MILKSHAKE</h3>
-								<span>₹60</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/papaya-80.jpg" alt="Dish 3">
+								<h3>PAPAYA MILKSHAKE</h3>
+								<p>₹60</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>APPLE MILKSHAKE </h3>
-								<span>₹70</span>
+							<div class="food-item">
+								<img src="assets/images/1x/apple ms-80.jpg" alt="Dish 3">
+								<h3>APPLE MILKSHAKE</h3>
+								<p>₹70</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BUTTER FRUIT MILKSHAKE </h3>
-								<span>₹75</span>
+							<div class="food-item">
+								<img src="assets/images/1x/oreo ms-80.jpg" alt="Dish 3">
+								<h3>OREO MILKSHAKE</h3>
+								<p>₹70</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ANAR MILKSHAKE</h3>
-								<span>₹75</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3> MUSKMELON MILKSHAKE</h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>OREO MILKSHAKE </h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DRY FRUIT MILKSHAKE </h3>
-								<span>₹85</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>STRABERRY MILKSHAKE</h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/choco ms-80.jpg" alt="Dish 3">
 								<h3>CHOCOLATE MILKSHAKE</h3>
-								<span>₹70</span>
+								<p>₹70</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VANILLA MILKSHAKE </h3>
-								<span>₹70</span>
+							<div class="food-item">
+								<img src="assets/images/1x/chiku ms-80.jpg" alt="Dish 3">
+								<h3>CHIKKU MILKSHAKE</h3>
+								<p>₹60</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>MANGO MILKSHAKE </h3>
-								<span>₹70</span>
+							<div class="food-item">
+								<img src="assets/images/1x/mango ms-80.jpg" alt="Dish 3">
+								<h3>MANGO MILKSHAKE</h3>
+								<p>₹70</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DATES MILKSHAKE</h3>
-								<span>₹85</span>
+							<div class="food-item">
+								<img src="assets/images/1x/bf ms-80.jpg" alt="Dish 3">
+								<h3>BUTTER FRUIT MILKSHAKE</h3>
+								<p>₹75</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BUTTER SCOTCH MILKSHAKE </h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ROSE MILK SHAKE</h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>COLD BADAM MILK SHAKE </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PISTA MILK SHAKE </h3>
-								<span>₹70</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>COLD COFFEE </h3>
-								<span>₹60</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>OREO BUSCUIT </h3>
-								<span>₹10</span>
-							</div>
-						</div><!-- Menu Item /- -->
+						</div>
+						
+						
 					</div><!-- Row /- -->
 				</div><!-- Container /- -->
 			</div><!-- Menu Section -->
@@ -3080,7 +1343,7 @@
 
 			<!-- Menu Section -->
 			<div class="container-fluid no-left-padding no-right-padding menu-section menu-cards">
-				<span class="top-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span>
+				<span class="top-img"><img src="assets/images/11.jpg" alt="Menu Card" /></span>
 				<!-- <span class="bottom-img"><img src="assets/images/menu-card3.png" alt="Menu Card" /></span> -->
 				<!-- Container -->
 				<div class="container">
@@ -3091,248 +1354,56 @@
 					<!-- Row -->
 					<div class="row">
 						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu1.jpg" alt="Menu" /></i>
-								</div>
-								<h3>VANNILLA SCOOPS </h3>
-								<span>₹50</span>
+						<div class="food">
+							<div class="food-item">
+								<img src="assets/images/1x/titanic ic-80.jpg" alt="Dish 1">
+								<h3>TITANIC</h3>
+								<p>₹130</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu2.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHOCOLATE SCOOPS </h3>
-								<span>₹50</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/choco ic-80.jpg" alt="Dish 2">
+								<h3>CHOCOLATE SCOOPS</h3>
+								<p>₹50</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu3.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BLACK CURRENT SCOOPS </h3>
-								<span>₹50</span>
+					
+							<div class="food-item">
+								<img src="assets/images/1x/bs ic-80.jpg" alt="Dish 3">
+								<h3>BUTTER SCOTCH SCOOPS</h3>
+								<p>₹50</p>
+								
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu4.jpg" alt="Menu" /></i>
-								</div>
-								<h3>STRAWBERRY SCOOP </h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu5.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BUTTER SCOTCH SCOOPS </h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu6.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/mango ic-80.jpg" alt="Dish 3">
 								<h3>MANGO SCOOP</h3>
-								<span>₹50</span>
+								<p>₹50/</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu7.jpg" alt="Menu" /></i>
-								</div>
-								<h3>PISTA SCOOP </h3>
-								<span>₹50</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu8.jpg" alt="Menu" /></i>
-								</div>
-								<h3>FRUIT SALAD </h3>
-								<span>₹80</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu9.jpg" alt="Menu" /></i>
-								</div>
-								<h3>FRUIT SALAD ICECREAM </h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>GUDBUD</h3>
-								<span>₹100</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/nut ic-80.jpg" alt="Dish 3">
 								<h3>NUT SUNDAY</h3>
-								<span>₹100</span>
+								<p>₹100</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DBL NUT SUNDAY </h3>
-								<span>₹130</span>
+							<div class="food-item">
+								<img src="assets/images/1x/royal falooda-80.jpg" alt="Dish 3">
+								<h3>ROYAL FALOODA</h3>
+								<p>₹110</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>BANANA SPLIT </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>TRIPPLE NUT SUNDAY</h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>CHOCOLATE FANTASSY </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>ROYAL FALOODA </h3>
-								<span>₹110</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>KHEER FALOODA </h3>
-								<span>₹120</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
+							<div class="food-item">
+								<img src="assets/images/1x/special f-80.jpg" alt="Dish 3">
 								<h3>SPECIAL FALOODA</h3>
-								<span>₹130</span>
+								<p>₹130</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DRY FRUIT FALOODA </h3>
-								<span>₹140</span>
+							<div class="food-item">
+								<img src="assets/images/1x/salad f-80.jpg" alt="Dish 3">
+								<h3>FRUIT SALAD</h3>
+								<p>₹80</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>HONEYMOON SPECIAL ICECREAM </h3>
-								<span>₹130</span>
+							<div class="food-item">
+								<img src="assets/images/1x/df ic-80.jpg" alt="Dish 3">
+								<h3>DRY FRUIT SPECIAL</h3>
+								<p>₹140</p>
 							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>DRY FRUIT SPECIAL </h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>LOVERS SPECIAL</h3>
-								<span>₹140</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>RAJA RANI </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-						<!-- Menu Item -->
-						<div class="col-md-6">
-							<div class="menu-item">
-								<div class="item-thumb">
-									<i><img src="assets/images/menu10.jpg" alt="Menu" /></i>
-								</div>
-								<h3>TITANIC </h3>
-								<span>₹130</span>
-							</div>
-						</div><!-- Menu Item /- -->
-					</div><!-- Row /- -->
-				</div><!-- Container /- -->
-			</div><!-- Menu Section -->
+						</div>
 			
 			<div class="clearfix"></div>
 			
@@ -3452,14 +1523,14 @@
 										</tr>
 									</table>
 								</div>
-								<aside class="widget widget_subscribe">
+								<!-- <aside class="widget widget_subscribe">
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="Your email">
 										<span class="input-group-btn">
 											<button class="btn btn-default" type="button">submit</button>
 										</span>
-									</div><!-- /input-group -->
-								</aside>
+									</div>
+								</aside> -->
 							</aside>
 						</div><!-- Widget Working Time -->
 						
@@ -3486,7 +1557,7 @@
 								<aside class="widget widget_social">
 									<ul>
 										<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+										<!-- <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
 										<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 										<li><a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
 									</ul>
