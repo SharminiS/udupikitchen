@@ -195,24 +195,24 @@
 							<div class="col-xs-12">
 								<h3>CONTACT US</h3>
 							</div>
-							<form class="col-xs-12 no-left-padding no-right-padding">
+							<form class="col-xs-12 no-left-padding no-right-padding" onsubmit="return validateForm(event)">
 								<div class="form-group col-xs-6">
-									<input type="text" class="form-control" placeholder="Name*" name="contact-name" id="input_name" required="" />
+									<input type="text" class="form-control" placeholder="Name*" name="contact-name" id="input_name" required />
 								</div>
 								<div class="form-group col-xs-6">
-									<input type="text" class="form-control" placeholder="Phone Number*" name="contact-phone" id="input_phone" required="" />
+									<input type="text" class="form-control" placeholder="Phone Number*" name="contact-phone" id="input_phone" required />
 								</div>
 								<div class="form-group col-xs-6">
-									<input type="text" class="form-control" placeholder="Email*" name="contact-email" id="input_email" />
+									<input type="text" class="form-control" placeholder="Email*" name="contact-email" id="input_email" required />
 								</div>
 								<div class="form-group col-xs-6">
-									<input type="text" class="form-control" placeholder="Address*" name="contact-address" id="input_address" />
+									<input type="text" class="form-control" placeholder="Address*" name="contact-address" id="input_address" required />
 								</div>
 								<div class="form-group col-xs-12">
-									<textarea class="form-control" placeholder="Enter Your Message Here*" name="textarea-message" id="textarea_message"></textarea>
+									<textarea class="form-control" placeholder="Enter Your Message Here*" name="textarea-message" id="textarea_message" required></textarea>
 								</div>
 								<div class="col-xs-12">
-									<button title="SEND MESSAGE" type="submit" id="btn_submit" name="post">submit</button>
+									<button title="SEND MESSAGE" type="submit" id="btn_submit" name="post">Submit</button>
 								</div>
 								<div id="alert-msg" class="alert-msg"></div>
 							</form>
@@ -397,6 +397,41 @@
 		  });
 		});
 	  </script>
+
+<script>
+    function validateForm(event) {
+        event.preventDefault(); // Prevent form submission before validation
+
+        let name = document.getElementById("input_name").value.trim();
+        let phone = document.getElementById("input_phone").value.trim();
+        let email = document.getElementById("input_email").value.trim();
+        let address = document.getElementById("input_address").value.trim();
+        let message = document.getElementById("textarea_message").value.trim();
+
+        // Check if any field is empty
+        if (!name || !phone || !email || !address || !message) {
+            alert("Please fill all the fields.");
+            return false;
+        }
+
+        // Validate phone number (10 digits only)
+        let phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            alert("Phone number must be exactly 10 digits.");
+            return false;
+        }
+
+        // Validate email (@gmail.com format)
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid Gmail address (e.g., example@gmail.com).");
+            return false;
+        }
+
+        alert("Form submitted successfully!");
+        return true; // Allow form submission
+    }
+</script>
 	
 </body>
 </html>

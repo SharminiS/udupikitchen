@@ -2433,13 +2433,13 @@ article.type-post .about-author .author-details p {
 	-webkit-box-shadow: none;
 	-webkit-appearance: none;
 	box-shadow: none;
-	color: #bdbdbd;
+	color: #4e4848;
 	font-size: 13px;
 	font-weight: bold;
 	min-height: 41px;
 	outline: none;
 	padding: 6px 18px;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	letter-spacing: 0.26px;
 }
 .contact-form textarea.form-control {
@@ -3392,7 +3392,7 @@ article.type-post .about-author .author-details p {
 	gap: 10px;
 	justify-content: center;
 	max-width: 1200px;
-	padding: 10px;
+	padding: 5%;
 }
 
 .image-container img {
